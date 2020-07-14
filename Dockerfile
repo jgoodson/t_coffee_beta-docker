@@ -6,4 +6,5 @@ RUN /t_coffee_installer  --mode unattended --user_email default@user.com --prefi
 ENV PATH="/t_coffee/bin/linux:/t_coffee/plugins/linux:$PATH"
 ENV PLUGINS_4_TCOFFEE="/t_coffee/plugins/linux"
 ENV PERL5LIB="$PERL5LIB:$DIR_4_TCOFFEE/perl/lib/perl5"
+ENV MAFFT_BINARIES="/t_coffee/plugins/linux"
 CMD ["/t_coffee/bin/linux/t_coffee"] 
